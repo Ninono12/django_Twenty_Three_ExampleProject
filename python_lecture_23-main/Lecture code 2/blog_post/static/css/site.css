@@ -1,0 +1,183 @@
+/* =========================
+   style.css
+   Advanced Custom Styles for My Blog
+   ========================= */
+
+/* Body & Typography */
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #212529;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0d6efd !important;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #ffffff !important;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd !important;
+    transform: scale(1.05);
+}
+
+/* Main Container */
+main.container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Blog list items */
+.blog-post {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    background: linear-gradient(135deg, #f0f2f5, #ffffff);
+}
+
+.blog-post h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: #0d6efd;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #495057;
+}
+
+/* Blog detail */
+.blog-detail {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.blog-detail h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.blog-detail p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #495057;
+}
+
+/* Buttons */
+.btn-custom {
+    background: #0d6efd;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(13,110,253,0.25);
+}
+
+.btn-custom:hover {
+    background: #0b5ed7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(13,110,253,0.35);
+}
+
+/* Alerts / messages */
+.alert-custom {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.alert-success {
+    background: #e6fffa;
+    border-left: 5px solid #0d9488;
+    color: #065f46;
+}
+
+.alert-error {
+    background: #fff5f5;
+    border-left: 5px solid #dc2626;
+    color: #991b1b;
+}
+
+.alert-warning {
+    background: #fffbeb;
+    border-left: 5px solid #facc15;
+    color: #78350f;
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0b5ed7;
+}
+
+/* Code styling */
+code {
+    background-color: #f1f5f9;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: monospace;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .blog-post, .blog-detail {
+        padding: 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-detail h1 {
+        font-size: 2rem;
+    }
+}
