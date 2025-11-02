@@ -9,9 +9,9 @@ from blog.models import Author
 class AuthorModelTest(TestCase):
     def test_author_age_property(self):
         author = Author.objects.create(
-            first_name='Mariam',
-            last_name='Kipshidze',
-            birth_date=date(2000, 10, 10)
+            first_name='Nina',
+            last_name='Korinteli',
+            birth_date=date(1975, 9, 12)
         )
         self.assertIsInstance(author.age, int)
         self.assertGreater(author.age, 0)
